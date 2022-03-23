@@ -1,0 +1,93 @@
+
+
+/**              DOM            **/
+
+/**  1. HTML DOM Documents   **/
+document.firstElementChild; //First child
+
+document.firstElementChild.firstElementChild; //the First child of the First child
+
+document.firstElementChild.lastElementChild;
+
+document.firstElementChild.lastElementChild.firstElementChild;
+
+//manipulate
+
+var heading1= document.firstElementChild.lastElementChild.firstElementChild;
+heading1
+//NOw chaging
+heading1.innerHTML="Conciousnes" // changing content
+
+heading1.style.color="red"; // changing color
+
+document.firstElementChild.lastElementChild.querySelector("ul").lastElementChild.innerHTML="new value";
+
+//change an element inside a list
+document.getElementsByTagName("li")[2].style.color="blue";
+
+/**  querySelector**/
+// element type
+document.querySelector("li"); // Select first element li
+document.querySelectorAll("li"); // Select all element
+document.querySelectorAll("li")[1]; // Select second element li
+document.querySelector("button");
+
+// id 
+document.querySelector("#title");
+
+// class
+document.querySelector(".list"); // Select first element of class "list"
+document.querySelectorAll(".list"); // select all elements of class list
+document.querySelectorAll(".list")[1]; // Select second element of class "list"
+
+// combining selectors
+/** no spaces when both element are in the same line**/
+
+document.querySelector("li.list"); //kind of element and class
+document.querySelectorAll("li.list");
+
+/** spaces when both element have an hieratical relation and are in different lines**/
+document.querySelector("#items a")
+
+/**  Combining id and class**/
+document.querySelector("#items .list");  Select first element of combination"
+document.querySelectorAll("#items .list"); // select all elements of combination
+document.querySelectorAll("#items .list")[1]; // Select second element of combination
+
+/** two elements **/
+document.querySelector("li a");
+
+/**  2 HTML DOM Style Object   **/
+/** changing features of objects https://www.w3schools.com/jsref/dom_obj_style.asp **/
+
+document.querySelectorAll("#items .list")[1].style.color="red";
+document.getElementsByTagName("button")[0].style.backgroundColor="yellow";
+
+/***  2.1 innerHTML and textContent  **/
+
+document.querySelector("h1").innerHTML;
+document.querySelector("h1").textContent; // this only give back the text 
+
+document.querySelector("h1").innerHTML= "<em> Good bye <em>" //now changing all inside 
+
+
+
+/**     3. Using HTML DOM Elements    **/
+/*** 3.1. Changing CSS features from Javascript with "classList"  ***/
+
+document.querySelector("button").classList.add("invisible");
+document.querySelector("button").classList.remove("invisible");
+document.querySelector("button").classList.toggle("invisible");
+
+//calling a CSS function
+document.querySelector("h1").classList.add("huge");
+
+
+/**     4. HTML DOM Attributes    **/
+document.querySelector("a").attributes; // look for all attributes surrounded <a>
+
+document.querySelector("a").getAttribute("href");
+
+document.querySelector("a").setAttribute("href","https://www.google.com");
+
+

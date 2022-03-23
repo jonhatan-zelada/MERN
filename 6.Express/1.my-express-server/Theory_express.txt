@@ -1,0 +1,63 @@
+2.JavaScript/6.Express$ mkdir my-express-server
+2.JavaScript/6.Express$ cd my-express-server/
+2.JavaScript/6.Express/my-express-server$ touch server.js
+2.JavaScript/6.Express/my-express-server$ node server.js
+2.JavaScript/6.Express/my-express-server$ npm init
+//** after this appears a great number of questin to finally a package.json is created
+
+//** now open a visual code
+2.JavaScript/6.Express/my-express-server$ code .
+
+//** import express js
+2.JavaScript/6.Express/my-express-server$ npm install express
+
+//* complete a program on server.js and start the server
+2.JavaScript/6.Express/my-express-server$ node server.js
+
+//* now go to the url
+http://localhost:3000/
+
+
+
+//* Each time I want to restart the server
+2.JavaScript/6.Express/my-express-server$ node server.js
+
+
+//**NODEMON
+//npm package that will make it way easier for us to auto start our servers.
+https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12749785#questions
+//So when this command doesn't work:
+npm install -g nodemon
+
+//I recommend to use this one instead:
+sudo npm install -g nodemon
+
+//After thi to turn on
+nodemon server.js
+
+//procedure
+Make a new folder called Calculator on your Desktop
+Change Directory to this new folder
+Inside the Calculator folder, create a new file called calculator.js
+Set up a new NPM package
+Open the project folder in Atom 
+Using NPM install the express module
+Require express in your calculator.js
+Setup express
+Create a root route get method with app.get()
+Send the words Hello World from the root route as the response
+Spin up our server on port 3000 with app.listen
+Run server with nodemon
+
+//Solution
+/6.Express$ mkdir calculator
+/6.Express$ cd calculator/
+/6.Express/calculator$ touch calculator.js
+/6.Express/calculator$ npm init
+/6.Express/calculator$ code .
+/6.Express/calculator$ npm install express
+/6.Express/calculator$ sudo npm install -g nodemon
+/6.Express/calculator$ nodemon calculator.js 
+
+//Posting parameters
+npm install body-parser

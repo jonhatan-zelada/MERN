@@ -1,0 +1,91 @@
+//**  USE A NATIVE MODULES
+
+/example1
+//**  USE A NATIVE MODULES
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos$ mkdir example_node
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos$ cd example_node/
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/example_node$ touch index.js
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/example_node$ ls
+index.js
+
+
+//example2
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ touch index.js
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node index.js
+hello there!
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node
+Welcome to Node.js v17.6.0.
+Type ".help" for more information.
+> console.log("Hi  Im inside node");
+Hi  Im inside node
+undefined
+> 3+9
+12
+> "Jonh"+"Z"
+'JonhZ'
+> .exit
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node
+Welcome to Node.js v17.6.0.
+Type ".help" for more information.
+> 
+(To exit, press Ctrl+C again or Ctrl+D or type .exit)
+> 
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ ^C
+
+
+//aDD A native function
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ pwd
+/home/jonh/Documentos/WebDev/2.JavaScript/5.NodeJS
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node index.js
+
+//**  USE A NATEXTERNAL  MODULES
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (5.nodejs) 
+version: (1.0.0) 
+description: This is a intro to nodejs
+entry point: (index.js) 
+test command: 
+git repository: 
+keywords: 
+author: Jonh Z
+license: (ISC) 
+About to write to /home/jonh/Documentos/WebDev/2.JavaScript/5.NodeJS/package.json:
+
+{
+  "name": "5.nodejs",
+  "version": "1.0.0",
+  "description": "This is a intro to nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jonh Z",
+  "license": "ISC"
+}
+
+Is this OK? (yes) 
+
+//**  EXAMPLE1  EXTRAMODULE**/
+// Using a external module; https://www.npmjs.com/package/superheroes
+
+//Step1: download superheroes
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ npm install superheros
+
+//Step2:Creating a superheroes.js
+
+//Step2: go to the file and run
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node superheroes.js
+Zakuro
+jonh@jonh-HP-All-in-One-22-dd0xxx:~/Documentos/WebDev/2.JavaScript/5.NodeJS$ node superheroes.js
+Black Widow
+

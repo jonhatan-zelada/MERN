@@ -1,0 +1,9 @@
+/** HIGHER ORDER FUNCTION **/
+/** addEventListener **/
+
+document.querySelector("button").addEventListener("click",handleClick);
+
+
+//eXAMPLE 2
+
+

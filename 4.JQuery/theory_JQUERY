@@ -1,0 +1,7 @@
+
+//to identity the style related to the element h1
+$("h1").attr("class");
+
+//to identity if there is a specific style related to the element h1
+//the expected value is true or false
+$("h1").hasClass("margin-50");

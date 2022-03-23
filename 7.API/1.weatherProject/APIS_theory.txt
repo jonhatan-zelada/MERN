@@ -1,0 +1,10 @@
+//Structure:
+https://nodejs.org/api/https.html#httpsgetoptions-callback
+
+//Using "on" method as mentioned in the source before
+
+
+HTTP response status codes:
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+//Funny way to learn
+https://httpstatusdogs.com/
