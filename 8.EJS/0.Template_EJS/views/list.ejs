@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To do list</title>
+</head>
+<body>
+    <h1>It's <%= kindOfday %> !!!</h1>
+
+
+    <% if (kindOfday === "Weekend") { %>
+     <h1 style="color: blue;">  thing to do in <%= kindOfday %>  </h1>
+    
+    <% } else { %>
+        <h1 style="color: red;">  thing to do in <%= kindOfday %>  </h1>
+    <% } %> 
+
+</body>
+</html>
