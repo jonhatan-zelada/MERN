@@ -26,10 +26,7 @@ http://localhost:3000/
 //**NODEMON
 //npm package that will make it way easier for us to auto start our servers.
 https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/12749785#questions
-//So when this command doesn't work:
-npm install -g nodemon
 
-//I recommend to use this one instead:
 sudo npm install -g nodemon
 
 //After thi to turn on
